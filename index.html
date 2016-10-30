@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Resize image</title>	 
+	  <script type="text/javascript" src="script.js"></script>
+	  <style type="text/css">
+	  .imgHolder img{
+	  float:left;
+	  margin-right:10px;
+	  margin-bottom:10px;
+	  }
+	  </style>
+   </head>
+   <body>
+<div style="float:left;width:100%">
+	<label>Select Images</label>
+	<input type="file" id="fileupload" multiple/>
+	<label>Width:</label><input type="text" id="img_width" style="width:70px"/>
+	<label>Height:</label><input type="text" id="img_height" style="width:70px"/>
+	<input type="button" value="SetSize" id="btnsize" />
+	<input type="button" value="Resize" id="btnresize" />
+</div>
+   <!--<img src="five.jpg" width="300" height="300" crossOrigin="Anonymous"> -->
+ <div style="width:100%;height:auto" id="imgload" class="imgHolder">
+ <img id="first" src="" />
+ </div>
+<div style="float:left;width:100%;height:auto">
+	<canvas id="canvas" width="300" height="300"></canvas> 
+</div>
+
+<div style="float:left;width:100%">	 
+	
+</div>
+
+   </body>
+    
+</html>
